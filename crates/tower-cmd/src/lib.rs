@@ -4,7 +4,7 @@ use config::{Config, Session};
 use colored::*;
 use tower_api::Client;
 
-mod apps;
+pub mod apps;
 mod secrets;
 mod session;
 mod deploy;
