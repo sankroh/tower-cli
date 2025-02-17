@@ -136,6 +136,7 @@ pub type Result<T> = std::result::Result<T, TowerError>;
 
 type StreamResult<T> = std::result::Result<T, std::io::Error>;
 
+#[derive(Clone)]
 pub struct Client {
     // tower_url is the URL that we use to connect to the client.
     tower_url: Url,
